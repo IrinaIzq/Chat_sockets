@@ -66,7 +66,7 @@ int main(int argc, char *argv[]) {
     // Create thread to recieve menssages
     HANDLE hThread = CreateThread(NULL, 0, receive_thread, NULL, 0, NULL);
     
-    // Principal loop principal to send messages
+    // Main loop to send messages
     while (running) {
         if (fgets(message, BUFFER_SIZE, stdin) == NULL) break;
         
