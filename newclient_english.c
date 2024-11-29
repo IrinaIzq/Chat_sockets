@@ -18,7 +18,7 @@ DWORD WINAPI receive_thread(LPVOID lpParam) {
     while (running) {
         int bytes_received = recv(client_socket, buffer, BUFFER_SIZE, 0);
         if (bytes_received <= 0) {
-            printf("Desconected from the server\n");
+            printf("Disconected from the server\n");
             running = 0;
             break;
         }
